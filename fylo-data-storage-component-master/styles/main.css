@@ -1,0 +1,168 @@
+html {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  background-image: url(/assets/images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100vmax;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  row-gap: 15px;
+}
+
+.first-box {
+  background-image: url(/assets/images/logo.svg), url(/assets/images/icon-document.svg), url(/assets/images/icon-folder.svg), url(/assets/images/icon-upload.svg);
+  background-repeat: no-repeat;
+  background-position: 35% 25%, 20% 80%, 40% 80%, 60% 80%;
+  background-color: #1d2c67;
+  background-size: 15em, 2.6em, 3em, 3em;
+  border-radius: 10px 10em 10px 10px;
+  width: 80%;
+  height: 30%;
+}
+
+.second-box {
+  position: relative;
+  background-color: #1d2c67;
+  border-radius: 10px;
+  color: azure;
+  font-size: 1.3rem;
+  width: 80%;
+  height: 25%;
+  text-align: center;
+}
+
+.second-box-header {
+  display: block;
+  padding-top: 25px;
+}
+
+.second-box-gb-used {
+  font-weight: 700;
+}
+
+.second-box-bar {
+  width: 80%;
+  height: 15px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+}
+
+.second-box-bar::-moz-range-progress {
+  -webkit-appearance: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 60px;
+}
+
+.second-box-bar::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+}
+
+.gb-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: initial;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+.second-box-0gb {
+  padding-right: 60%;
+}
+
+.second-box-gb-left {
+  position: absolute;
+  padding-top: 1.5rem;
+  bottom: -20%;
+  right: 25%;
+  left: 25%;
+  width: 60%;
+  height: 6rem;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  color: #0c122c;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.gb-left {
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: #0c122c;
+    background-image: url(/assets/images/bg-desktop.png);
+    background-position: bottom;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+  }
+
+  .first-box {
+    width: 25%;
+    height: 25%;
+  }
+
+  .second-box {
+    margin-top: 2.5%;
+    width: 35%;
+    height: 20%;
+    text-align: initial;
+  }
+
+  .second-box-bar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .second-box-header {
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+
+  .second-box-gb-left {
+    position: absolute;
+    height: 40%;
+    width: 35%;
+    text-align: center;
+    top: -20%;
+    left: 55%;
+  }
+
+  .second-box-gb-left::after {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    bottom: -2rem;
+    right: 0;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

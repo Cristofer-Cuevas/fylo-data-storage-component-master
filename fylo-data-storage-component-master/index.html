@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="first-box"></div>
+      <div class="second-box">
+        <span class="second-box-header"
+          >You’ve used <span class="second-box-gb-used">815 GB </span>of your
+          storage
+        </span>
+        <input
+          type="range"
+          id="bar"
+          class="second-box-bar"
+          step="0.1"
+          min="0"
+          max="100"
+          value="85"
+        />
+        <div class="gb-container">
+          <span class="second-box-0gb">0 GB</span>
+          <span>100 GB</span>
+        </div>
+        <div class="second-box-gb-left">
+          185 <span class="gb-left">GB LEFT</span>
+        </div>
+      </div>
+    </section>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Christopher</a>.
+    </footer>
+  </body>
+</html>
